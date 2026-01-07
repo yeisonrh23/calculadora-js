@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif; /*cambiar a negrita */
+            text-align: center; /*centrar todo*/
+        }
+
+        input{
+            display: block; /*ordena los inputs en fila*/
+            margin: auto; /*primero va esto antes del bottom porque sino sigue todo junto*/
+            margin-bottom: 15px; /*separa un poco los inputs*/
+            
+        }
+    
+    </style>
+
+    <!--defer significa que primero se carga el html
+    y luego el js*/-->
+    <script src="./index.js" defer></script>
+    
+</head>
+<body>
+    <h1>Calculadora con javascript</h1>
+    <input type="text" placeholder="Numero 1" id="n1">
+    <input type="text" placeholder="+ - * /" id="operacion">
+    <input type="text" placeholder="Numero 2" id="n2">
+    <input type="submit" value="Calcular" id="btn" onclick="calcular()">
+    <p id="resultado"></p>
+</body>
+</html>
